@@ -1,0 +1,43 @@
+{
+  "name": "sschreier/sschreierhtmlcssjstwigcodeelementforshoppingexperiences",
+  "description": "html and twig code element for the shopping experiences",
+  "version": "1.0.0",
+  "type": "shopware-platform-plugin",
+  "license": "GPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "Sebastian Schreier",
+      "role": "Manufacturer"
+    }
+  ],
+  "require": {
+    "shopware/core": "~6.6.0",
+    "shopware/storefront": "~6.6.0"
+  },
+  "extra": {
+    "shopware-plugin-class": "Sschreier\\HtmlCssJsTwigCodeElementForShoppingExperiences\\SschreierHtmlCssJsTwigCodeElementForShoppingExperiences",
+    "plugin-icon": "src/Resources/config/plugin.png",
+    "copyright": "Sebastian Schreier",
+    "label": {
+      "de-DE": "Element für HTML-, CSS-, JS- und Twig-Code für die Erlebniswelten",
+      "en-GB": "html, css, js and twig code element for the shopping experiences"
+    },
+    "description": {
+      "de-DE": "Die Erweiterung stellt einen CMS-Block und ein CMS-Element für HTML-, CSS-, JS- und Twig-Code unter der Block-Kategorie 'HTML' innerhalb eines Layouts zur Verfügung. Über das entsprechende Icon kann das CMS-Element bei Bedarf wie gewohnt bei jedem CMS-Block eingesetzt werden. Nach der Aktivierung der Twig-Kompilierung kann man in den Feldern auch Twig-Variablen und Textbausteine verwenden. Dadurch lassen sich Inhalte in den Erlebniswelten personalisieren oder auch Kunden-, Kategorien- oder Produktdaten anzeigen.",
+      "en-GB": "The extension provides a cms block and a cms element for html, css, js and twig code under the block category 'HTML' within a layout. If required, the cms element can be used at any cms block as usual using the corresponding icon. After enabling the twig compilation, you can also use twig variables and snippets in the fields. This makes it possible to personalize content in the shopping experiences or to display customer, category or product data."
+    },
+    "manufacturerLink": {
+      "de-DE": "https://www.sebastianschreier.de",
+      "en-GB": "https://www.sebastianschreier.de"
+    },
+    "supportLink": {
+      "de-DE": "https://www.sebastianschreier.de",
+      "en-GB": "https://www.sebastianschreier.de"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Sschreier\\HtmlCssJsTwigCodeElementForShoppingExperiences\\": "src/"
+    }
+  }
+}

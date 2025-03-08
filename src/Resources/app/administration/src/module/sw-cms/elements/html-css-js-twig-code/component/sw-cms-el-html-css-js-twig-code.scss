@@ -1,0 +1,18 @@
+.sw-cms-el-html-css-js-twig-code {
+    .sw-code-editor {
+        margin-top: 22px;
+        margin-bottom: 0;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        .sw-field {
+            margin-bottom: 0;
+
+            .sw-code-editor__editor {
+                height: 80px;
+            }
+        }
+    }
+}

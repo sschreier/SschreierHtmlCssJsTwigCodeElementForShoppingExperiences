@@ -1,0 +1,147 @@
+{% block sw_cms_el_config_html_css_js_twig_code %}
+    <div class="sw-cms-el-config-html-css-js-twig-code">
+        {% block sw_cms_el_config_html_css_js_twig_code_tabs %}
+            <sw-tabs
+                position-identifier="sw-cms-element-config-html-css-js-twig-code"
+                class="sw-cms-el-config-html-css-js-twig-code__tabs"
+                default-item="content"
+            >
+
+                <template #default="{ active }">
+                    <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+                    {% block sw_cms_el_config_html_css_js_twig_code_tab_content %}
+                        <sw-tabs-item
+                            :title="$tc('sw-cms.elements.htmlCssJsTwigCode.config.tab.content')"
+                            name="content"
+                            :active-tab="active"
+                        >
+                            {{ $tc('sw-cms.elements.htmlCssJsTwigCode.config.tab.content') }}
+                        </sw-tabs-item>
+                    {% endblock %}
+
+                    <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+                    {% block sw_cms_el_config_html_css_js_twig_code_tab_settings %}
+                        <sw-tabs-item
+                            :title="$tc('sw-cms.elements.htmlCssJsTwigCode.config.tab.settings')"
+                            name="settings"
+                            :active-tab="active"
+                        >
+                            {{ $tc('sw-cms.elements.htmlCssJsTwigCode.config.tab.settings') }}
+                        </sw-tabs-item>
+                    {% endblock %}
+                </template>
+
+                <template
+                    #content="{ active }"
+                >
+                    <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+                    {% block sw_cms_el_config_html_css_js_twig_code_content %}
+                        <sw-container
+                            v-if="active === 'content'"
+                            class="sw-cms-el-config-html-css-js-twig-code__tab-content"
+                        >
+                            <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+                            {% block sw_cms_el_config_html_css_js_twig_code_content_enable_twig_in_content_html %}
+                                <sw-switch-field
+                                    :label="$tc('sw-cms.elements.htmlCssJsTwigCode.config.label.enableTwigInContentHtml')"
+                                    v-model:value="element.config.enableTwigInContentHtml.value"
+                                    class="sw-cms-el-config-html-css-js-twig-code-switch"
+                                />
+
+                                <sw-alert variant="info">
+                                    {{ $tc('sw-cms.elements.htmlCssJsTwigCode.config.label.warningEnableTwigInContentHtml') }}
+                                </sw-alert>
+                            {% endblock %}
+
+                            <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+                            {% block sw_cms_el_config_html_css_js_twig_code_content_content_html %}
+                                <sw-code-editor
+                                    :label="$tc('sw-cms.elements.htmlCssJsTwigCode.config.label.contentHtml')"
+                                    :value="element.config.contentHtml.value"
+                                    :set-focus="true"
+                                    @update:value="onInput"
+                                    @blur="onBlur"
+                                    class="sw-cms-el-config-html-css-js-twig-code-content-html"
+                                />
+
+                                <sw-alert variant="warning">
+                                    {{ $tc('sw-cms.elements.html.config.warning') }}
+                                </sw-alert>
+                            {% endblock %}
+
+                            <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+                            {% block sw_cms_el_config_html_css_js_twig_code_content_content_css %}
+                                <sw-code-editor
+                                        :label="$tc('sw-cms.elements.htmlCssJsTwigCode.config.label.contentCss')"
+                                        :value="element.config.contentCss.value"
+                                        :set-focus="true"
+                                        @update:value="onInputCss"
+                                        @blur="onBlurCss"
+                                        class="sw-cms-el-config-html-css-js-twig-code-content-css"
+                                />
+                            {% endblock %}
+
+                            <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+                            {% block sw_cms_el_config_html_css_js_twig_code_content_content_js %}
+                                <sw-code-editor
+                                        :label="$tc('sw-cms.elements.htmlCssJsTwigCode.config.label.contentJavaScript')"
+                                        :value="element.config.contentJavaScript.value"
+                                        :set-focus="true"
+                                        @update:value="onInputJs"
+                                        @blur="onBlurJs"
+                                        class="sw-cms-el-config-html-css-js-twig-code-content-js"
+                                />
+                            {% endblock %}
+                        </sw-container>
+                    {% endblock %}
+
+                    <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+                    {% block sw_cms_el_config_html_css_js_twig_code_settings %}
+                        <sw-container
+                            v-if="active === 'settings'"
+                            class="sw-cms-el-config-html-css-js-twig-code__tab-settings"
+                        >
+                            <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+                            {% block sw_cms_el_config_html_css_js_twig_code_settings_vertical_align %}
+                                <sw-select-field
+                                    :label="$tc('sw-cms.elements.htmlCssJsTwigCode.config.label.verticalAlign')"
+                                    v-model:value="element.config.verticalAlign.value"
+                                    :placeholder="$tc('sw-cms.elements.htmlCssJsTwigCode.config.label.verticalAlign')"
+                                >
+                                    <option value="flex-start">
+                                        {{ $tc('sw-cms.elements.htmlCssJsTwigCode.config.label.verticalAlignTop') }}
+                                    </option>
+                                    <option value="center">
+                                        {{ $tc('sw-cms.elements.htmlCssJsTwigCode.config.label.verticalAlignCenter') }}
+                                    </option>
+                                    <option value="flex-end">
+                                        {{ $tc('sw-cms.elements.htmlCssJsTwigCode.config.label.verticalAlignBottom') }}
+                                    </option>
+                                </sw-select-field>
+                            {% endblock %}
+
+                            <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+                            {% block sw_cms_el_config_html_css_js_twig_code_settings_horizontal_align %}
+                                <sw-select-field
+                                    :label="$tc('sw-cms.elements.htmlCssJsTwigCode.config.label.horizontalAlign')"
+                                    v-model:value="element.config.horizontalAlign.value"
+                                    :placeholder="$tc('sw-cms.elements.htmlCssJsTwigCode.config.label.horizontalAlign')"
+                                >
+                                    <option value="flex-start">
+                                        {{ $tc('sw-cms.elements.htmlCssJsTwigCode.config.label.horizontalAlignLeft') }}
+                                    </option>
+                                    <option value="center">
+                                        {{ $tc('sw-cms.elements.htmlCssJsTwigCode.config.label.horizontalAlignCenter') }}
+                                    </option>
+                                    <option value="flex-end">
+                                        {{ $tc('sw-cms.elements.htmlCssJsTwigCode.config.label.horizontalAlignRight') }}
+                                    </option>
+                                </sw-select-field>
+                            {% endblock %}
+                        </sw-container>
+                    {% endblock %}
+                </template>
+            </sw-tabs>
+        {% endblock %}
+    </div>
+{% endblock %}

@@ -1,0 +1,35 @@
+{
+  "sw-cms": {
+    "blocks": {
+      "htmlCssJsTwigCode": {
+        "label": "HTML-, CSS-, JavaScript- und Twig-Code"
+      }
+    },
+    "elements": {
+      "htmlCssJsTwigCode": {
+        "label": "HTML-, CSS-, JavaScript- und Twig-Code",
+        "config": {
+          "tab": {
+            "content": "Inhalt",
+            "settings": "Einstellungen"
+          },
+          "label": {
+            "enableTwigInContentHtml": "Twig-Kompilierung für alle Felder aktivieren",
+            "warningEnableTwigInContentHtml": "Nach der Aktivierung der Twig-Kompilierung können in den nachfolgenden Feldern auch Twig-Variablen und Textbausteine verwendet werden.",
+            "contentHtml": "HTML-Code",
+            "contentCss": "CSS-Code",
+            "contentJavaScript": "JavaScript-Code",
+            "verticalAlign": "Vertikale Ausrichtung",
+            "verticalAlignTop": "Oben",
+            "verticalAlignCenter": "Mitte",
+            "verticalAlignBottom": "Unten",
+            "horizontalAlign": "Horizontale Ausrichtung",
+            "horizontalAlignLeft": "Links",
+            "horizontalAlignCenter": "Mitte",
+            "horizontalAlignRight": "Rechts"
+          }
+        }
+      }
+    }
+  }
+}

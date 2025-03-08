@@ -1,0 +1,22 @@
+{% block sw_cms_el_html_css_js_twig_code %}
+    <div class="sw-cms-el-html-css-js-twig-code">
+        <sw-code-editor
+            v-if="element.config.contentHtml.value !== ''"
+            v-model:value="element.config.contentHtml.value"
+            :disabled="true"
+            :editor-config="editorConfig"
+        />
+        <sw-code-editor
+            v-if="element.config.contentCss.value !== ''"
+            v-model:value="element.config.contentCss.value"
+            :disabled="true"
+            :editor-config="editorConfig"
+        />
+        <sw-code-editor
+            v-if="element.config.contentJavaScript.value !== ''"
+            v-model:value="element.config.contentJavaScript.value"
+            :disabled="true"
+            :editor-config="editorConfig"
+        />
+    </div>
+{% endblock %}
