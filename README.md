@@ -29,7 +29,7 @@ This makes it possible to _personalize content in the shopping experiences_ or t
 ```
 
 ## How to install the extension
-### via console (recommended)
+### via zip and console (recommended)
 1. Download the latest _SschreierHtmlCssJsTwigCodeElementForShoppingExperiences-master.zip_.
 2. Unzip the zip file and rename the folder to _SschreierHtmlCssJsTwigCodeElementForShoppingExperiences_.
 3. Move the folder to the project folder _custom/plugins/_ .
@@ -52,8 +52,17 @@ bin/console plugin:install --activate SschreierHtmlCssJsTwigCodeElementForShoppi
 ],
 ```
 
-2. Connect to the console via ssh and install the plugin source code via the command
+2. Connect to the console via ssh and install the plugin via the command
 ```
+composer require sschreier/sschreierhtmlcssjstwigcodeelementforshoppingexperiences
+bin/console plugin:refresh
+bin/console plugin:install --activate SschreierHtmlCssJsTwigCodeElementForShoppingExperiences
+```
+
+### via https://packagist.org
+ - Connect to the console via ssh and install the plugin via the command
+
+ ```
 composer require sschreier/sschreierhtmlcssjstwigcodeelementforshoppingexperiences
 bin/console plugin:refresh
 bin/console plugin:install --activate SschreierHtmlCssJsTwigCodeElementForShoppingExperiences
