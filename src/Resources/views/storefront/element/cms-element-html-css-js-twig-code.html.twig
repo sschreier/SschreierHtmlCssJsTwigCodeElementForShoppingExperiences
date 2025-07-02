@@ -1,35 +1,37 @@
 {% block cms_element_html_css_js_twig_code %}
+    {% set config = element.fieldConfig.elements %}
+
     {% set htmlCssJsTwigCodeElementContent %}
-        {% if element.config.contentHtml.value %}
-            {{ element.config.contentHtml.value|raw }}
+        {% if config.contentHtml.value %}
+            {{ config.contentHtml.value|raw }}
         {% endif %}
 
-        {% if element.config.contentCss.value %}
+        {% if config.contentCss.value %}
             <style>
-                {{ element.config.contentCss.value|raw }}
+                {{ config.contentCss.value|raw }}
             </style>
         {% endif %}
 
-        {% if element.config.contentJavaScript.value %}
+        {% if config.contentJavaScript.value %}
             <script type="text/javascript">
-                {{ element.config.contentJavaScript.value|raw }}
+                {{ config.contentJavaScript.value|raw }}
             </script>
         {% endif %}
     {% endset %}
 
     {% block cms_element_html_css_js_twig_code_inner %}
-        <div class="cms-element-{{ element.type }}{% if element.config.verticalAlign.value %} has-vertical-alignment{% endif %}{% if element.config.horizontalAlign.value %} has-horizontal-alignment{% endif %}">
-            {% if element.config.verticalAlign.value or element.config.horizontalAlign.value %}
-                <div class="cms-element-alignment{% if element.config.verticalAlign.value == "center" %} align-self-center{% elseif element.config.verticalAlign.value == "flex-end" %} align-self-end{% elseif element.config.verticalAlign.value == "flex-start" %} align-self-start{% endif %}{% if element.config.horizontalAlign.value == "center" %} text-center{% elseif element.config.horizontalAlign.value == "flex-end" %} text-end{% elseif element.config.horizontalAlign.value == "flex-start" %} text-start{% endif %}">
+        <div class="cms-element-{{ element.type }}{% if config.verticalAlign.value %} has-vertical-alignment{% endif %}{% if config.horizontalAlign.value %} has-horizontal-alignment{% endif %}">
+            {% if config.verticalAlign.value or config.horizontalAlign.value %}
+                <div class="cms-element-alignment{% if config.verticalAlign.value == "center" %} align-self-center{% elseif config.verticalAlign.value == "flex-end" %} align-self-end{% elseif config.verticalAlign.value == "flex-start" %} align-self-start{% endif %}{% if config.horizontalAlign.value == "center" %} text-center{% elseif config.horizontalAlign.value == "flex-end" %} text-end{% elseif config.horizontalAlign.value == "flex-start" %} text-start{% endif %}">
             {% endif %}
 
-            {% if element.config.enableTwigInContentHtml.value %}
+            {% if config.enableTwigInContentHtml.value %}
                 {% include(template_from_string(htmlCssJsTwigCodeElementContent)) %}
             {% else %}
                 {{ htmlCssJsTwigCodeElementContent }}
             {% endif %}
 
-            {% if element.config.verticalAlign.value or element.config.horizontalAlign.value %}
+            {% if config.verticalAlign.value or config.horizontalAlign.value %}
                 </div>
             {% endif %}
         </div>

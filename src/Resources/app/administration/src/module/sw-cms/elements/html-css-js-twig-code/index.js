@@ -1,23 +1,7 @@
-/**
- * @private
- * @package buyers-experience
- */
 Shopware.Component.register('sw-cms-el-preview-html-css-js-twig-code', () => import('./preview'));
-/**
- * @private
- * @package buyers-experience
- */
 Shopware.Component.register('sw-cms-el-config-html-css-js-twig-code', () => import('./config'));
-/**
- * @private
- * @package buyers-experience
- */
 Shopware.Component.register('sw-cms-el-html-css-js-twig-code', () => import('./component'));
 
-/**
- * @private
- * @package buyers-experience
- */
 Shopware.Service('cmsService').registerCmsElement({
     name: 'html-css-js-twig-code',
     label: 'sw-cms.elements.htmlCssJsTwigCode.label',
@@ -49,11 +33,11 @@ console.log("test");`.trim(),
         },
         verticalAlign: {
             source: 'static',
-            value: null
+            value: null,
         },
         horizontalAlign: {
             source: 'static',
-            value: null
-        }
-    }
+            value: null,
+        },
+    },
 });

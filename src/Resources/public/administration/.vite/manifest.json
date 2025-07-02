@@ -1,0 +1,57 @@
+{
+  "main.js": {
+    "file": "assets/sschreier-html-css-js-twig-code-element-for-shopping-experiences-DeKJoW28.js",
+    "name": "sschreier-html-css-js-twig-code-element-for-shopping-experiences",
+    "src": "main.js",
+    "isEntry": true,
+    "dynamicImports": [
+      "module/sw-cms/blocks/html/html-css-js-twig-code/component/index.js",
+      "module/sw-cms/blocks/html/html-css-js-twig-code/preview/index.js",
+      "module/sw-cms/elements/html-css-js-twig-code/preview/index.js",
+      "module/sw-cms/elements/html-css-js-twig-code/config/index.js",
+      "module/sw-cms/elements/html-css-js-twig-code/component/index.js"
+    ]
+  },
+  "module/sw-cms/blocks/html/html-css-js-twig-code/component/index.js": {
+    "file": "assets/index-DXB01gdz.js",
+    "name": "index",
+    "src": "module/sw-cms/blocks/html/html-css-js-twig-code/component/index.js",
+    "isDynamicEntry": true
+  },
+  "module/sw-cms/blocks/html/html-css-js-twig-code/preview/index.js": {
+    "file": "assets/index-DHb0WD7g.js",
+    "name": "index",
+    "src": "module/sw-cms/blocks/html/html-css-js-twig-code/preview/index.js",
+    "isDynamicEntry": true,
+    "css": [
+      "assets/index-y_xwSiBD.css"
+    ]
+  },
+  "module/sw-cms/elements/html-css-js-twig-code/component/index.js": {
+    "file": "assets/index-w0oX8LON.js",
+    "name": "index",
+    "src": "module/sw-cms/elements/html-css-js-twig-code/component/index.js",
+    "isDynamicEntry": true,
+    "css": [
+      "assets/index-UyexaK60.css"
+    ]
+  },
+  "module/sw-cms/elements/html-css-js-twig-code/config/index.js": {
+    "file": "assets/index-puHWdNbe.js",
+    "name": "index",
+    "src": "module/sw-cms/elements/html-css-js-twig-code/config/index.js",
+    "isDynamicEntry": true,
+    "css": [
+      "assets/index-CoanX_sy.css"
+    ]
+  },
+  "module/sw-cms/elements/html-css-js-twig-code/preview/index.js": {
+    "file": "assets/index-CqAWXqih.js",
+    "name": "index",
+    "src": "module/sw-cms/elements/html-css-js-twig-code/preview/index.js",
+    "isDynamicEntry": true,
+    "css": [
+      "assets/index-B65o8oq8.css"
+    ]
+  }
+}

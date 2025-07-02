@@ -1,0 +1,2 @@
+const s='{% block sw_cms_block_html_css_js_twig_code %} <div class="sw-cms-block-html-css-js-twig-code"> <slot name="content"> {% block sw_cms_block_html_css_js_twig_code_slot_content %}{% endblock %} </slot> </div> {% endblock %}',c={template:s};export{c as default};
+//# sourceMappingURL=index-DXB01gdz.js.map

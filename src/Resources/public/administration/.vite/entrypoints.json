@@ -1,0 +1,29 @@
+{
+  "base": "/bundles/sschreierhtmlcssjstwigcodeelementforshoppingexperiences/administration/",
+  "entryPoints": {
+    "sschreier-html-css-js-twig-code-element-for-shopping-experiences": {
+      "css": [],
+      "dynamic": [
+        "/bundles/sschreierhtmlcssjstwigcodeelementforshoppingexperiences/administration/assets/index-DXB01gdz.js",
+        "/bundles/sschreierhtmlcssjstwigcodeelementforshoppingexperiences/administration/assets/index-DHb0WD7g.js",
+        "/bundles/sschreierhtmlcssjstwigcodeelementforshoppingexperiences/administration/assets/index-CqAWXqih.js",
+        "/bundles/sschreierhtmlcssjstwigcodeelementforshoppingexperiences/administration/assets/index-puHWdNbe.js",
+        "/bundles/sschreierhtmlcssjstwigcodeelementforshoppingexperiences/administration/assets/index-w0oX8LON.js"
+      ],
+      "js": [
+        "/bundles/sschreierhtmlcssjstwigcodeelementforshoppingexperiences/administration/assets/sschreier-html-css-js-twig-code-element-for-shopping-experiences-DeKJoW28.js"
+      ],
+      "legacy": false,
+      "preload": []
+    }
+  },
+  "legacy": false,
+  "metadatas": {},
+  "version": [
+    "7.1.0",
+    7,
+    1,
+    0
+  ],
+  "viteServer": null
+}

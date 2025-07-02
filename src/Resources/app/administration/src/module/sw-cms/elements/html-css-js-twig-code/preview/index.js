@@ -1,10 +1,6 @@
 import template from './sw-cms-el-preview-html-css-js-twig-code.html.twig';
 import './sw-cms-el-preview-html-css-js-twig-code.scss';
 
-/**
- * @private
- * @package buyers-experience
- */
 export default {
     template,
 

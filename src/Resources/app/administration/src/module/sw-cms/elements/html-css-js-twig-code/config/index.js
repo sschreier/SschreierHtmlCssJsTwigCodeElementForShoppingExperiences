@@ -3,20 +3,56 @@ import './sw-cms-el-config-html-css-js-twig-code.scss';
 
 const { Mixin } = Shopware;
 
-/**
- * @private
- * @package buyers-experience
- */
 export default {
     template,
-
-    compatConfig: Shopware.compatConfig,
 
     emits: ['element-update'],
 
     mixins: [
-        Mixin.getByName('cms-element')
+        Mixin.getByName('cms-element'),
     ],
+
+    computed: {
+        verticalAlignmentOptions() {
+            return [
+                {
+                    id: 1,
+                    value: 'flex-start',
+                    label: this.$tc('sw-cms.elements.htmlCssJsTwigCode.config.label.verticalAlignTop'),
+                },
+                {
+                    id: 2,
+                    value: 'center',
+                    label: this.$tc('sw-cms.elements.htmlCssJsTwigCode.config.label.verticalAlignCenter'),
+                },
+                {
+                    id: 3,
+                    value: 'flex-end',
+                    label: this.$tc('sw-cms.elements.htmlCssJsTwigCode.config.label.verticalAlignBottom'),
+                },
+            ];
+        },
+
+        horizontalAlignmentOptions() {
+            return [
+                {
+                    id: 1,
+                    value: 'flex-start',
+                    label: this.$tc('sw-cms.elements.htmlCssJsTwigCode.config.label.horizontalAlignLeft'),
+                },
+                {
+                    id: 2,
+                    value: 'center',
+                    label: this.$tc('sw-cms.elements.htmlCssJsTwigCode.config.label.horizontalAlignCenter'),
+                },
+                {
+                    id: 3,
+                    value: 'flex-end',
+                    label: this.$tc('sw-cms.elements.htmlCssJsTwigCode.config.label.horizontalAlignRight'),
+                },
+            ];
+        },
+    },
 
     created() {
         this.createdComponent();

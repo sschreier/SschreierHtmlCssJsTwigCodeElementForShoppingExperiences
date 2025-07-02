@@ -3,10 +3,6 @@ import './sw-cms-el-html-css-js-twig-code.scss';
 
 const { Mixin } = Shopware;
 
-/**
- * @private
- * @package buyers-experience
- */
 export default {
     template,
 
